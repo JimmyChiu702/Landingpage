@@ -1,5 +1,4 @@
 body {
-    background-color: rgba(166,75, 75, 0.7);
 }
 
 * {
@@ -8,13 +7,18 @@ body {
           box-sizing: border-box;
 }
 
+#page1 {
+    background-color: white;
+}
+
 #SLOGAN_OP {
     /*看要不要換成圖 還有ending的東西*/
-    -webkit-animation-duration:3s;
+    -webkit-animation-duration:5s;
     -webkit-animation-name: fadein;
     font-family: 'Shadows Into Light', cursive;
+    visibility: hidden;
     background-size: 100%;
-    color :#FFFFFF;
+    color :grey;
     font-size: 5vw;
     font-weight: bold;
     text-align: center;
@@ -31,36 +35,37 @@ body {
 
 @-webkit-keyframes fadein {
     from {
+        visibility: visible;
         position: relative;
         top: -120%;
         opacity: 0;
     }
 
-    to {
+    30% {
+        visibility: visible;
         position: relative;
         top: -0%;
         opacity: 1;
     }
-}
 
-#lonely {
-    width : 49%;
-    height: 100%;
-    border-radius: 100%;
-    display: inline;
-}
+    60% {
+        visibility: visible;
+        position: relative;
+        top: -0%;
+        opacity: 1;
+    }
 
-#happy {
-    width : 49%;
-    height: 100%;
-    border-radius: 100%;
-    display: inline;
+    to {
+        position: relative;
+        top: -0%;
+        opacity: 0;
+    }
 }
 
 
 #arrow {
-    -webkit-animation-duration:5s;
-    -webkit-animation-name: popout;
+    -webkit-animation-duration:8s;
+    -webkit-animation-name: popoutA;
     width: 5vw;
     height: 4vw;
     display: -webkit-flex;
@@ -70,7 +75,21 @@ body {
     margin: auto;
 }
 
-@-webkit-keyframes popout {
+#question {
+    -webkit-animation-duration:8s;
+    -webkit-animation-name: popoutQ;
+    z-index:6;
+    width: 30%;
+    opacity: 0.7;
+    height: auto;
+    display: -webkit-flex;
+    display:         flex;
+    position: relative;
+    top: -100%;
+    margin: auto;
+}
+
+@-webkit-keyframes popoutA {
     from {
         opacity: 0;
         visibility: hidden;
@@ -87,6 +106,23 @@ body {
     }
 }
 
+@-webkit-keyframes popoutQ {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    50%{
+        opacity: 0;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0.7;
+        visibility: visible;
+    }
+}
+
 #arrow:hover {
     width: 6vw;
     height: 5vw;
@@ -96,6 +132,7 @@ body {
     top: -15%;
     margin: auto;
 }
+
 #arrow:active {
     width: 10vw;
     height: 8vw;
@@ -111,12 +148,132 @@ body {
     font-family: 'Shadows Into Light', cursive;
     background-size: 100%;
     color :#FFFFFF;
+    font-weight: normal;
+    text-align: center;
+    margin:auto;
+    height: 100%;
+    width: 60%;
+    font-size: 5vw;
+}
+
+#comparisson {
+    position: relative;
+}
+
+#happy {
+    position: relative;
+    background-color: rgba(166,75, 75, 07);
+    width: 100%;
+    padding: 5% 15%;
+}
+
+#img_1 {
+    width: 50%;
+    height: auto;
+}
+
+#p1 {
+    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
+    z-index: 6;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    font-size: 3vw;
+    color: white;
+    line-height: 5vw;
+}
+
+strong {
+    font-size: 5vw !important;
+    line-height: 8vw;
+    font-weight: bolder;
+}
+
+#lonely {
+    position: relative;
+    background-color: gray;
+    float: right;
+    width: 100%;
+    padding: 5% 15%;
+}
+
+#img_2 {
+    float: right;
+    width: 50%;
+    height: auto;
+}
+
+pre#p2 {
+    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
+    z-index: 6;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    font-size: 3vw;
+    color: white;
+    line-height: 5vw;
+    background-color: grey;
+    padding: 0 0 0 0;
+    border: none;
+    margin: 0 0 0 0;
+}
+
+#page1 {
+    height: 100%;
+}
+
+#page5 {
+    background-color: rgba(228, 111, 15, 0.68);
+    height: 100%;
+}
+
+#SLOGAN_ED {
+    /*看要不要換成圖 還有ending的東西*/
+    -webkit-animation-duration:3s;
+    -webkit-animation-name: fadein;
+    font-family: 'Shadows Into Light', cursive;
+    background-size: 100%;
+    color :#FFFFFF;
+    font-size: 5vw;
     font-weight: bold;
     text-align: center;
     margin:auto;
     height: 100%;
     width: 60%;
-    font-size: 5rem;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+      align-items: center;
+    -webkit-justify-content: center;
+      justify-content: center;
+}
+.page {
+    height:100%;
+}
+#like , #share {
+    -webkit-animation-duration:5s;
+    -webkit-animation-name: popout;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -35%;
+}
+
+.icon {
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    position: relative;
+}
+
+#Get_Info {
+    border-radius: 1vw;
+    border-color: white;
+    border-width: thick;
+    color: black;
+    font-size: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 
 h3 {
@@ -124,4 +281,9 @@ h3 {
     color: white;
     text-align: center;
     text-shadow: 1px 1px #000000;
+    margin: auto;
+    padding-bottom: 2vw;
+    background-color: rgba(228, 111, 15, 0.68);
+    position: relative;
+    top:20%;
 }

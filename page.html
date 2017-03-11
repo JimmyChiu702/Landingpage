@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale= 1.0">
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <link href="http://www.wfublog.com/2014/02/font-family-chinese-cross-platform.html" rel="canonical">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script>
             var i = 0;
             function count(){
@@ -14,32 +19,75 @@
         </script>
         <title>Família</title>
     </head>
-    <body style="height: 100%;">
-        <div style="height: 100%;" id="page1"><p id="SLOGAN_OP">你多久沒打給媽媽了？</p><img id="arrow" src="images/arrow.png" alt=""></div>
-        <div id="page2">
-            <img id="lonely" src="images/lonely.jpeg">
-            <img id="happy" src="images/happy.jpg">
-            <p>要有說明</p>
+    <body style="height: 100%;" data-target="#navbar-spy" data-spy="scroll">
+        <nav class="nav navbar-inverse navbar-fixed-top" id="navbar-spy" >
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Familia</a>
+                </div>
+                <ul class="nav navbar-nav nav-tabs">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#page1">Page 1</a></li>
+                    <li><a class="nav-link" href="#page2">Page 2</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Function<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">First</a></li>
+                            <li><a href="#">Second</a></li>
+                            <li><a href="#">Third</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="page" style="height: 100%;" id="page1"><p id="SLOGAN_OP">你多久沒打給媽媽了？</p>
+            <img id="arrow" src="images/arrow.png" alt="">
+            <img id="question"src="images/question.png" alt="">
         </div>
-        <div style="height: 100%;" id="page3">
+        <div class="page" id="page2">
+            <div id="happy">
+                <img src="images/happy.jpg" id="img_1">
+                <pre id="p1">
+                    現在的你
+                    正在校園享受
+                    <strong>大學生活</strong>
+                </pre>
+            </div>
+            <div id="lonely">
+                <img src="images/lonely.jpeg" id="img_2">
+                <pre id="p2">
+                    此時此刻
+                    有人在家惦記
+                    <strong>遠方的你</strong>
+                </pre>
+            </div>
+        </div>
+        <!--<div style="height: 100%;" id="page3">
             <p  id="intro">
-                <br><br><br>社群媒體如此盛行，你與朋友情人之間有了更多聯繫<br>但，你和你的家人呢？
+                社群媒體如此盛行，你與朋友情人之間有了更多聯繫<br>但，你和你的家人呢？
             </p>
-        </div>
-        <div id="page4"><!--三個主要特色介紹-->
+        </div>-->
+        <!--<div id="page4">三個主要特色介紹
             <img id="lonely" src="images/lonely.jpeg">
             <img id="happy" src="images/happy.jpg">
             <img id="lonely" src="images/lonely.jpeg">
             <img id="happy" src="images/happy.jpg">
             <img id="lonely" src="images/lonely.jpeg">
             <img id="happy" src="images/happy.jpg">
+        </div>-->
+        <div class="page" style="height: 100%;" id="page5">
+            <p id="SLOGAN_ED">別再給自己更多藉口</p>
+            <nav id="like">Like Us:
+                <img class="icon" id="heart" src="images/heart.png" alt="">
+            </nav>
+            <nav id="share">Share on:
+                <a href="https://www.facebook.com/sharer/sharer.php?u=file%3A///home/cocoa/Desktop/landingpage/page.html"><img class="icon" id="FB" src="images/FB.png" alt=""></a>
+                <a href="https://twitter.com/home?status=file%3A///home/cocoa/Desktop/landingpage/page.html"><img class="icon" id="Twitter" src="images/twitter.png" alt=""></a>
+                <a href="https://plus.google.com/share?url=file%3A///home/cocoa/Desktop/landingpage/page.html"><img class="icon "id="Google" src="images/google.png" alt=""></a>
+                <br>
+                <button id="Get_Info"name="interest"><a href="https://www.google.com">Let me know when it's available!!</a></button>
+            </nav>
+
         </div>
-        <div id="page5">
-            <p>別再給自己更多藉口</p>
-            <button name="love" onclick="count()"><img src="images/heart.png" alt=""></button>
-            <button id="share">Share</button>
-            <button name="interest">Let me know when it's available!!</button>
-        </div>
-        <h3>聯絡資訊：暫略</h3>
+        <h3>聯絡資訊：暫略<h3>
     </body>
 </html>
