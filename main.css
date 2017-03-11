@@ -1,0 +1,63 @@
+body {
+    background-color: rgba(166,75, 75, 07);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#SLOGAN_OP {
+    /*看要不要換成圖 還有ending的東西*/
+    font-family: 'Shadows Into Light', cursive;
+    background-size: 100%;
+    color :#FFFFFF;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+    height: 100%;
+    width: 60%;
+}
+
+/*#lonely {
+    width : 49%;
+    height: 100%;
+    border-radius: 100%;
+    display: inline;
+}
+
+#happy {
+    width : 49%;
+    height: 100%;
+    border-radius: 100%;
+    display: inline;
+}*/
+
+img {
+    width : 49%;
+    height: 100%;
+    border-radius: 100%;
+    display: inline;
+}
+
+#intro {
+    /*看要不要換成圖 還有ending的東西*/
+    font-family: 'Shadows Into Light', cursive;
+    background-size: 100%;
+    color :#FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+    height: 100%;
+    width: 60%;
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+}
