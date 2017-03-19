@@ -15,7 +15,7 @@ body {
     /*看要不要換成圖 還有ending的東西*/
     -webkit-animation-duration:5s;
     -webkit-animation-name: fadein;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
     visibility: hidden;
     background-size: 100%;
     color :grey;
@@ -79,13 +79,13 @@ body {
     -webkit-animation-duration:8s;
     -webkit-animation-name: popoutQ;
     z-index:6;
-    width: 30%;
+    width: 20%;
     opacity: 0.7;
     height: auto;
     display: -webkit-flex;
     display:         flex;
     position: relative;
-    top: -100%;
+    top: -90%;
     margin: auto;
 }
 
@@ -145,7 +145,7 @@ body {
 }
 #intro {
     /*看要不要換成圖 還有ending的東西*/
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
     background-size: 100%;
     color :#FFFFFF;
     font-weight: normal;
@@ -162,7 +162,7 @@ body {
 
 #happy {
     position: relative;
-    background-color: rgba(166,75, 75, 07);
+    background-color: rgb(166,75, 75);
     width: 100%;
     padding: 5% 15%;
 }
@@ -170,17 +170,26 @@ body {
 #img_1 {
     width: 50%;
     height: auto;
+    z-index: 2;
+    border-radius: 1%;
+    position: relative;
 }
 
 #p1 {
     font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
-    z-index: 6;
+    z-index: 0;
     position: absolute;
-    top: 10%;
-    left: 43%;
+    top: 27%;
+    left: 45%;
     font-size: 3vw;
     color: white;
     line-height: 5vw;
+    background-color: rgb(166,75, 75);
+    padding: 0 0 0 0;
+    border: none;
+    margin: 0 0 0 0;
+    padding-left: 0;
+    text-align: left;
 }
 
 strong {
@@ -207,8 +216,8 @@ pre#p2 {
     font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
     z-index: 6;
     position: absolute;
-    top: 10%;
-    left: 6%;
+    top: 28%;
+    left: -5%;
     font-size: 3vw;
     color: white;
     line-height: 5vw;
@@ -216,6 +225,7 @@ pre#p2 {
     padding: 0 0 0 0;
     border: none;
     margin: 0 0 0 0;
+    text-align: right;
 }
 
 #page1 {
@@ -225,21 +235,23 @@ pre#p2 {
 #page5 {
     background-color: rgba(228, 111, 15, 0.68);
     height: 100%;
+    top: 50%;
+    position: relative;
+    text-align: center;
 }
 
 #SLOGAN_ED {
     /*看要不要換成圖 還有ending的東西*/
-    -webkit-animation-duration:3s;
-    -webkit-animation-name: fadein;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
     background-size: 100%;
     color :#FFFFFF;
     font-size: 5vw;
     font-weight: bold;
     text-align: center;
-    margin:auto;
-    height: 100%;
+    margin: auto;
+    height: 75%;
     width: 60%;
+
     display: -webkit-flex;
     -webkit-align-items: center;
       align-items: center;
@@ -248,24 +260,26 @@ pre#p2 {
 }
 .page {
     height:100%;
+    position: relative;
 }
 #like , #share {
     -webkit-animation-duration:5s;
     -webkit-animation-name: popout;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     color: white;
     font-weight: bold;
     position: relative;
     top: -35%;
+    line-height: 10rem;
 }
 
 .icon {
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     display: inline-block;
     position: relative;
 }
-
+/*
 #Get_Info {
     border-radius: 1vw;
     border-color: white;
@@ -275,15 +289,141 @@ pre#p2 {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
 }
+*/
 
-h3 {
-    font-size: 1rem;
+#btn {
+    background-color: gray;
+    padding: 1rem 2rem;
     color: white;
+    border-radius: 1rem;
+}
+
+#btn:hover {
+    background-color: rgb(50, 50, 50);
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+#footer {
+    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
+    font-size: 1.2vw;
+    color: black;
     text-align: center;
     text-shadow: 1px 1px #000000;
-    margin: auto;
-    padding-bottom: 2vw;
-    background-color: rgba(228, 111, 15, 0.68);
+    margin: 5vw auto 0 auto;
     position: relative;
-    top:20%;
+    top:32%;
+}
+
+/**** nav css ****/
+.F_title {
+  color: #f49967;
+}
+
+.E_title {
+  color: #fccabe;
+}
+
+/*** intro page (page3) ***/
+p#intro {
+  background-size: 100%;
+  color :grey;
+  font-size: 3.8vw;
+  font-weight: bold;
+  text-align: center;
+  margin:0 auto;
+  height: 100%;
+  width: 55%;
+  top:30%;
+  position: inherit;
+}
+
+div#page3 {
+  height: 100%;
+}
+
+/**** page4 *****/
+img#icon {
+  position: relative;
+  width: 40vw;
+  left: 10%;
+}
+
+p#page4_text {
+  color :grey;
+  font-size: 2vw;
+  text-align: left;
+  margin:auto;
+  height: 100%;
+  width: 40%;
+  left: 20%;
+  top: -45%;
+  position: relative;
+}
+
+/**** page6 ****/
+div#page6{
+  height: 100%;
+  position: relative;
+}
+
+p#page6_text_intro {
+  color :grey;
+  font-size: 3vw;
+  text-align: center;
+  margin:auto;
+ /* width: 70%;*/
+  position: relative;
+}
+
+img#son{
+  position: relative;
+  height: auto;
+  width: 30%;
+  padding-top: 10%;
+  left: 15%;
+}
+
+p#sun_intro{
+  position: relative;
+  color :grey;
+  font-size: 2vw;
+  text-align: left;
+  margin:auto;
+  width: 40%;
+  position: relative;
+  left: 0%;
+  top : -28%;
+}
+
+img#mom{
+  position: relative;
+  height: auto;
+  width: 30%;
+  left: 50%;
+  top: -10%;
+  display: block;
+}
+
+p#mom_intro{
+  position: relative;
+  color :grey;
+  font-size: 2vw;
+  text-align: left;
+  margin:auto;
+  width: 40%;
+  position: relative;
+  left: 20%;
+  top : -38%;
+}
+
+img#features {
+  top: 20%;
+  height: auto;
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
+  display: block;
 }
