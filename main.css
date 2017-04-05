@@ -1,5 +1,4 @@
-body {
-}
+/* Familia */
 
 * {
   -webkit-box-sizing: border-box;
@@ -7,8 +6,30 @@ body {
           box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+}
+
+span#F {
+    color: #f49967;
+}
+
+span#amilia {
+    color: #fccabe;
+}
+
+.page {
+  height: 100%;
+  display: block;
+}
+/***********page1***********/
+
 #page1 {
+    height: 100%;
+    width: 100%;
     background-color: white;
+    display: block;
+    margin-bottom: 20%;
 }
 
 #SLOGAN_OP {
@@ -22,11 +43,12 @@ body {
     font-size: 5vw;
     font-weight: bold;
     text-align: center;
-    margin:auto;
+    margin: 0% 20% 0% 20%;
     height: 100%;
     width: 60%;
     display: -webkit-flex;
     display:         flex;
+    position: absolute;
     -webkit-align-items: center;
       align-items: center;
     -webkit-justify-content: center;
@@ -36,43 +58,30 @@ body {
 @-webkit-keyframes fadein {
     from {
         visibility: visible;
-        position: relative;
+        position: absolute;
         top: -120%;
         opacity: 0;
     }
 
     30% {
         visibility: visible;
-        position: relative;
+        position: absolute;
         top: -0%;
         opacity: 1;
     }
 
     60% {
         visibility: visible;
-        position: relative;
+        position: absolute;
         top: -0%;
         opacity: 1;
     }
 
     to {
-        position: relative;
+        position: absolute;
         top: -0%;
         opacity: 0;
     }
-}
-
-
-#arrow {
-    -webkit-animation-duration:8s;
-    -webkit-animation-name: popoutA;
-    width: 5vw;
-    height: 4vw;
-    display: -webkit-flex;
-    display:         flex;
-    position: relative;
-    top: -15%;
-    margin: auto;
 }
 
 #question {
@@ -84,26 +93,16 @@ body {
     height: auto;
     display: -webkit-flex;
     display:         flex;
-    position: relative;
-    top: -90%;
-    margin: auto;
-}
-
-@-webkit-keyframes popoutA {
-    from {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    50%{
-        opacity: 0;
-        visibility: visible;
-    }
-
-    to {
-        opacity: 1;
-        visibility: visible;
-    }
+    position: absolute;
+    display: -webkit-flex;
+    display:         flex;
+    position: absolute;
+    -webkit-align-items: center;
+      align-items: center;
+    -webkit-justify-content: center;
+      justify-content: center;
+      top: 40%;
+      margin: auto 40%;
 }
 
 @-webkit-keyframes popoutQ {
@@ -123,307 +122,120 @@ body {
     }
 }
 
-#arrow:hover {
-    width: 6vw;
-    height: 5vw;
-    display: -webkit-flex;
-    display:         flex;
-    position: relative;
-    top: -15%;
-    margin: auto;
-}
-
-#arrow:active {
-    width: 10vw;
-    height: 8vw;
-    display: -webkit-flex;
-    display:         flex;
-    position: relative;
-    top: -15%;
-    margin: auto;
-    /*之後改成往下到page2*/
-}
-#intro {
-    /*看要不要換成圖 還有ending的東西*/
-    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
-    background-size: 100%;
-    color :#FFFFFF;
-    font-weight: normal;
-    text-align: center;
-    margin:auto;
+/* Intro paragraph */
+#page2 {
+    float: left;
+    weight: auto;
     height: 100%;
-    width: 60%;
-    font-size: 5vw;
+    position: absolute;
+    top: 100%;
+    display: block;
+    margin: auto;
 }
 
-#comparisson {
-    position: relative;
+img#img_1 {
+  display: inline-block;
+  border-radius: 5%;
+  box-shadow: 1vw 1vw 2vw grey;
+  -webkit-box-shadow: 1vw 1vw 2vw grey;
+  -moz-box-shadow: 1vw 1vw 2vw grey;
+  padding: 0 0 0 0 !important;
+  margin: 8vw 0vw;
 }
 
-#happy {
-    position: relative;
-    background-color: rgb(166,75, 75);
-    width: 100%;
-    padding: 5% 15%;
-}
-
-#img_1 {
-    width: 50%;
-    height: auto;
-    z-index: 2;
-    border-radius: 1%;
-    position: relative;
+img#img_2 {
+  display: inline-block;
+  border-radius: 5%;
+  box-shadow: 1vw 1vw 2vw grey;
+  -webkit-box-shadow: 1vw 1vw 2vw grey;
+  -moz-box-shadow: 1vw 1vw 2vw grey;
+  padding: 0 0 0 0 !important;
+  margin: 8vw 0;
 }
 
 #p1 {
-    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
-    z-index: 0;
-    position: absolute;
-    top: 27%;
-    left: 45%;
-    font-size: 3vw;
-    color: white;
-    line-height: 5vw;
-    background-color: rgb(166,75, 75);
-    padding: 0 0 0 0;
-    border: none;
-    margin: 0 0 0 0;
-    padding-left: 0;
-    text-align: left;
+  padding-left: 1vw;
+  font-weight: bold;
+  font-size: 2.5vmax;
 }
 
-strong {
-    font-size: 5vw !important;
-    line-height: 8vw;
-    font-weight: bolder;
+#p2 {
+  padding-left: 1vw;
+  font-weight: bold;
+  font-size: 2.5vmax;
 }
 
-#lonely {
-    position: relative;
-    background-color: gray;
-    float: right;
-    width: 100%;
-    padding: 5% 15%;
+#SLOGAN_MID {
+  font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
+  background-size: 100%;
+  color :grey;
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 20vmax 10vw 0% 10vw;
+  width: 80vw;
+  display: -webkit-block;
+  display:         block;
+  position: relative;
+  top: 80%;
+  -webkit-align-items: center;
+    align-items: center;
+  -webkit-justify-content: center;
+    justify-content: center;
+    z-index: 1;
 }
 
-#img_2 {
-    float: right;
-    width: 50%;
-    height: auto;
+#happy_family {
+  float:right;
+  width: 30vw;
 }
 
-pre#p2 {
-    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
-    z-index: 6;
-    position: absolute;
-    top: 28%;
-    left: -5%;
-    font-size: 3vw;
-    color: white;
-    line-height: 5vw;
-    background-color: grey;
-    padding: 0 0 0 0;
-    border: none;
-    margin: 0 0 0 0;
-    text-align: right;
-}
+/********page3**********/
 
-#page1 {
-    height: 100%;
-}
-
-#page5 {
-    background-color: rgba(228, 111, 15, 0.68);
-    height: 100%;
-    top: 50%;
-    position: relative;
-    text-align: center;
+#function {
+  width: 80vw;
+  margin-top: 20%;
 }
 
 #SLOGAN_ED {
-    /*看要不要換成圖 還有ending的東西*/
-    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
-    background-size: 100%;
-    color :#FFFFFF;
-    font-size: 5vw;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-    height: 75%;
-    width: 60%;
-
-    display: -webkit-flex;
-    -webkit-align-items: center;
-      align-items: center;
-    -webkit-justify-content: center;
-      justify-content: center;
-}
-.page {
-    height:100%;
-    position: relative;
-}
-#like , #share {
-    -webkit-animation-duration:5s;
-    -webkit-animation-name: popout;
-    font-size: 1.8vw;
-    color: white;
-    font-weight: bold;
-    position: relative;
-    top: -35%;
-    line-height: 10rem;
-}
-
-.icon {
-    width: 3vw;
-    height: 3vw;
-    display: inline-block;
-    position: relative;
-}
-/*
-#Get_Info {
-    border-radius: 1vw;
-    border-color: white;
-    border-width: thick;
-    color: black;
-    font-size: 2vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-}
-*/
-
-#btn {
-    background-color: gray;
-    padding: 1rem 2rem;
-    color: white;
-    border-radius: 1rem;
-}
-
-#btn:hover {
-    background-color: rgb(50, 50, 50);
-    padding: 1rem 2rem;
-    color: white;
-    border-radius: 1rem;
-    text-decoration: none;
-}
-
-#footer {
-    font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
-    font-size: 1.2vw;
-    color: black;
-    text-align: center;
-    text-shadow: 1px 1px #000000;
-    margin: 5vw auto 0 auto;
-    position: relative;
-    top:32%;
-}
-
-/**** nav css ****/
-.F_title {
-  color: #f49967;
-}
-
-.E_title {
-  color: #fccabe;
-}
-
-/*** intro page (page3) ***/
-p#intro {
+  font-family: "文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro",Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
   background-size: 100%;
   color :grey;
-  font-size: 3.8vw;
+  font-size: 6vmax;
+  font-weight: normal !important;
+  text-align: center;
+  margin: 51vmin 10vw;
+  padding-bottom: 20vw;
+  width: 80vw;
+  display: -webkit-block;
+  display:         block;
+  position: relative;
+  top: 10vmin;
+  -webkit-align-items: center;
+    align-items: center;
+  -webkit-justify-content: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#excuse {
   font-weight: bold;
-  text-align: center;
-  margin:0 auto;
-  height: 100%;
-  width: 55%;
-  top:30%;
-  position: inherit;
+  color: rgba(245, 39, 26, 0.74);
 }
 
-div#page3 {
-  height: 100%;
+/********* contact us*******/
+.icon {
+  width: 5vw;
+  height:5vw;
+}
+#FB{
+  border-radius: 100000px;
+}
+#Twitter{
+  border-radius: 100000px;
 }
 
-/**** page4 *****/
-img#icon {
+#like, #share {
   position: relative;
-  width: 40vw;
-  left: 10%;
-}
-
-p#page4_text {
-  color :grey;
-  font-size: 2vw;
-  text-align: left;
-  margin:auto;
-  height: 100%;
-  width: 40%;
-  left: 20%;
-  top: -45%;
-  position: relative;
-}
-
-/**** page6 ****/
-div#page6{
-  height: 100%;
-  position: relative;
-}
-
-p#page6_text_intro {
-  color :grey;
-  font-size: 3vw;
-  text-align: center;
-  margin:auto;
- /* width: 70%;*/
-  position: relative;
-}
-
-img#son{
-  position: relative;
-  height: auto;
-  width: 30%;
-  padding-top: 10%;
-  left: 15%;
-}
-
-p#sun_intro{
-  position: relative;
-  color :grey;
-  font-size: 2vw;
-  text-align: left;
-  margin:auto;
-  width: 40%;
-  position: relative;
-  left: 0%;
-  top : -28%;
-}
-
-img#mom{
-  position: relative;
-  height: auto;
-  width: 30%;
-  left: 50%;
-  top: -10%;
-  display: block;
-}
-
-p#mom_intro{
-  position: relative;
-  color :grey;
-  font-size: 2vw;
-  text-align: left;
-  margin:auto;
-  width: 40%;
-  position: relative;
-  left: 20%;
-  top : -38%;
-}
-
-img#features {
-  top: 20%;
-  height: auto;
-  width: 70%;
-  position: relative;
-  margin: 0 auto;
-  display: block;
+  top: -20vmax;
 }
