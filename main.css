@@ -225,9 +225,14 @@ img#img_2 {
 
 /********* contact us*******/
 .icon {
-  width: 5vw;
-  height:5vw;
+  width: 8vmin;
+  height:8vmin;
 }
+
+.icon:hover {
+  opacity: 0.8;
+}
+
 #FB{
   border-radius: 100000px;
 }
@@ -237,5 +242,34 @@ img#img_2 {
 
 #like, #share {
   position: relative;
-  top: -20vmax;
+}
+
+#send_btn {
+  border-radius: 1vw;
+}
+
+#send_btn:hover {
+  opacity: 0.8;
+}
+
+#reset_btn {
+  border-radius: 1vw;
+}
+
+#reset_btn:hover {
+  opacity: 0.8;
+}
+
+.info {
+  width: 20vw;
+  min-width: 240px;
+  border-color: black;
+}
+
+#comment {
+  height: 10vmin;
+}
+
+footer {
+  margin-bottom: 4vh;
 }
