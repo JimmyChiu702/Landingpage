@@ -244,6 +244,10 @@ img#img_2 {
   position: relative;
 }
 
+#share {
+  margin-bottom:30vh;
+}
+
 #send_btn {
   border-radius: 1vw;
 }
